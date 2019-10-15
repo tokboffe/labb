@@ -1,0 +1,278 @@
+body {
+  margin: 30px 0px 30px 0px;
+}
+footer{
+  margin: auto;
+}
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+    max-width: 1000px;
+    margin: auto;
+    }
+
+  #sokform {
+      position: relative;
+    }
+  #sokruta {
+       position: absolute;
+       top: -27px;
+       right:10px;
+     }
+#kontakter{
+  text-align: center;
+  font-size: 20px;
+}
+#bigpic{
+  width: 30%;
+}
+#select{
+  background-color: #cdf0fd;
+}
+#smallpic{
+  width: 5%;
+}
+#smalltext{
+  font-size: 16px;
+}
+h1{
+  color:black
+}
+
+form{
+  float: right;
+  padding: 3px;
+}
+.sidebar
+{
+  width: 100%;
+  background-color: #8bdeff;
+  border-radius: 5px;
+  margin: 5px 5px 5px 5px;
+  color: black;
+  min-width: 100px;
+  font-size: 14px;
+  text-align: left;
+  padding: 2px;
+}
+h1{
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: Center;
+  padding: 0px;
+  margin: 5px;
+  color: black;
+  font-size: 24px;
+}
+h3{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  padding: 0px;
+  margin: 5px;
+  color: black;
+  font-size: 20px;
+}
+.vali{
+  text-align: center;
+
+}
+p{
+  text-align: left;
+  font-size: 14px;
+  color: black;
+  margin: 5px;
+}
+li {
+  display: inline;
+  border-right: 1px solid rgb(255, 255, 255);
+
+}
+li:last-child {
+  border-right: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8bdeff;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+li a:hover {
+  background-color: #cdf0fd;
+}
+
+
+  .box {
+    background-color: rgb(243, 242, 248);
+    color: #fff;
+    border-radius: 0px;
+    
+    border-color: blue;
+    padding: 0px;
+    font-size: 150%;
+    text-align: center;
+    }
+
+  .a {
+    grid-column: 1 / 10;
+    grid-row: 1;
+    }
+
+  .b {
+    grid-column: 1 ;
+    grid-row: 2 / 30;
+    width: 250px;
+    padding: 0px 8px 0px 0px;
+    }
+
+  .c {
+    grid-column: 2 / 10;
+    grid-row: 2;
+    }
+
+  .d {
+    grid-column: 2 / 6;
+    grid-row: 3 / 30;
+    }
+
+  .e {
+    grid-column: 6 / 10;
+    grid-row: 3 / 30;
+  }
+
+  @media (max-width: 750px) {
+      
+    .b {
+      display: none;
+      }
+      
+    .c {
+      grid-column: 1 / 10;
+      grid-row: 2;
+      }
+  
+    .d {
+      grid-column: 1 / 10;
+      grid-row: 3 / 10;
+      }
+  
+    .e {
+      grid-column: 1 / 10;
+      grid-row: 10 / 20;
+    }
+  } 
+  @media (max-width: 350px) {
+    #sokform {
+      position: relative;
+      
+    }
+     #sokruta {
+       position: absolute;
+       top: 0;
+       right:0;
+     }
+  }
+
+
+  * {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Gömmer bilderna från start */
+.mySlides {
+  display: none;
+}
+/* Visar bild 1 */
+#slide1 {
+  display:block
+}
+
+/* Nästa och tidigare knapp*/
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* position på knapparna */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Hoverbakgrund på knapparna */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* bildtext */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* bildnummer */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* cirkel */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
