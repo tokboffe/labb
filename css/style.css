@@ -20,7 +20,7 @@ footer{
        position: absolute;
        top: -27px;
        right:10px;
-       max-width: 100px;
+       max-width: 170px;
      }
 
   .bilder {
@@ -49,9 +49,6 @@ footer{
 #smalltext{
   font-size: 16px;
 }
-h1{
-  color:black
-}
 
 form{
   float: right;
@@ -61,7 +58,7 @@ form{
 {
   width: 100%;
   background-color: #8bdeff;
-  border-radius: 5px;
+  border-radius: 2px;
   margin: 5px 5px 5px 5px;
   color: black;
   min-width: 100px;
@@ -69,11 +66,35 @@ form{
   text-align: left;
   padding: 2px;
 }
+
+.sidebar article{
+  padding:0px;
+  margin:0px;
+  display: inline;
+}
+.klockslag {
+  
+  display: inline;
+  padding:0px;
+  margin:0px;
+  font-weight: 900;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+}
+.senastenytt {
+  display: inline;
+  padding: 0;
+}
+
 h1{
   font-size: 1em;
   margin: 10px;
   font-family: Arial, Helvetica, sans-serif;
+  color:black
+  
 }
+
 h2{
   font-family: Arial, Helvetica, sans-serif;
   text-align: Center;
@@ -82,6 +103,7 @@ h2{
   color: black;
   font-size: 24px;
 }
+
 h3{
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
@@ -100,15 +122,15 @@ p{
   margin: 5px;
   padding: 1em;
 }
-li {
+.a li {
   display: inline;
   border-right: 1px solid rgb(255, 255, 255);
 
 }
-li:last-child {
+.a li:last-child {
   border-right: none;
 }
-ul {
+.a ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -116,11 +138,11 @@ ul {
   background-color: #8bdeff;
 }
 
-li {
+.a li {
   float: left;
 }
 
-li a {
+.a li a {
   display: block;
   color: white;
   text-align: center;
@@ -129,7 +151,7 @@ li a {
   font-size: 18px;
 }
 
-li a:hover {
+.a li a:hover {
   background-color: #cdf0fd;
 }
 
@@ -151,12 +173,10 @@ li a:hover {
     }
 
   .b {
-    
     grid-column: 1 ;
-    grid-row: 2 / 30;
+    grid-row: 2 / 5;
     width: 250px;
     padding: 0px 8px 0px 0px;
-    font-family: Arial, Helvetica, sans-serif
     }
 
   .sidebar{
@@ -182,6 +202,11 @@ li a:hover {
     grid-column: 2 / 10;
     grid-row: 3 / 30;
     }
+
+  .f h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+  }
 
   .g {
     grid-column: 2 / 10;
@@ -213,23 +238,19 @@ li a:hover {
     }
   } 
   @media (max-width: 415px) {
-
-    .tg{
-      max-width: 400px;
-    }
     #sokform {
-      position: relative;
+      position: relative;     
     }
      #sokruta {
        position: absolute;
-       top: 0;
-       right:1;
-
+       top: 0px;
+       right:1px;
+       
      }
      #soksubmit {
        position:absolute;
-       top:0;
-       right:0
+       top:0px;
+       right:0px;
      }
   }
 
@@ -291,6 +312,7 @@ li a:hover {
   bottom: 8px;
   width: 100%;
   text-align: center;
+  background-color: rgba(0,0,0,0.8);
 }
 
 /* bildnummer */
