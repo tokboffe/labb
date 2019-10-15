@@ -20,6 +20,7 @@ footer{
        position: absolute;
        top: -27px;
        right:10px;
+       max-width: 100px;
      }
 
   .bilder {
@@ -69,6 +70,7 @@ form{
   padding: 2px;
 }
 h1{
+  font-size: 1em;
   margin: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -93,9 +95,10 @@ h3{
 
 p{
   text-align: left;
-  font-size: 14px;
+  font-size: 0.7em;
   color: black;
   margin: 5px;
+  padding: 1em;
 }
 li {
   display: inline;
@@ -148,12 +151,17 @@ li a:hover {
     }
 
   .b {
+    
     grid-column: 1 ;
     grid-row: 2 / 30;
     width: 250px;
     padding: 0px 8px 0px 0px;
     font-family: Arial, Helvetica, sans-serif
     }
+
+  .sidebar{
+    font-size: 0.6em;
+  }
 
   .c {
     grid-column: 2 / 10;
@@ -170,7 +178,20 @@ li a:hover {
     grid-row: 3 / 30;
   }
 
+  .f {
+    grid-column: 2 / 10;
+    grid-row: 3 / 30;
+    }
+
+  .g {
+    grid-column: 2 / 10;
+    grid-row: 31 / 60;
+    color: black;
+  }
+
   @media (max-width: 750px) {
+
+    .tg{max-width: 750px;}
       
     .b {
       display: none;
@@ -192,6 +213,10 @@ li a:hover {
     }
   } 
   @media (max-width: 415px) {
+
+    .tg{
+      max-width: 400px;
+    }
     #sokform {
       position: relative;
     }
@@ -305,3 +330,12 @@ li a:hover {
   width:88px;
   height:31px
 }
+
+
+.tg  {border-collapse:collapse;border-spacing:0; overflow-x: auto;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-de2y{border-color:#333333;text-align:left;vertical-align:top}
+
